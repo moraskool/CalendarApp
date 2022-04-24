@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calendar App</string>
+    <string name="choose_calendar_theme">Choose your calendar mode.</string>
+    <string name="title_mastermonth_list">detail_activities</string>
+    <string name="title_mastermonth_detail">master_month Detail</string>
+    <string name="widget_mode">Widget Mode</string>
+    <string name="scribble_mode">Scribble Mode</string>
+    <string name="next">Next</string>
+    <string name="todo">TODO</string>
+</resources>

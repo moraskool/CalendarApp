@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ChooseLayoutActivity">
+
+    <!--<nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+        android:id="@+id/themedButtonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:layout_marginHorizontal="32dp"
+        app:alignItems="center">
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/btnWidget"
+            android:layout_width="0dp"
+            android:layout_height="145dp"
+            app:layout_flexGrow="1"
+            app:toggle_btnCornerRadius="10dp"
+            app:toggle_icon="@drawable/ic_scribble_outline"
+            app:toggle_iconGravity="top|center"
+            app:toggle_iconPaddingHorizontal="15dp"
+            app:toggle_iconPaddingTop="15dp"
+            app:toggle_selectedBackgroundColor="@color/light_blue"
+            app:toggle_selectedTextColor="@android:color/white"
+            app:toggle_text="Widget Mode"
+            app:toggle_textGravity="bottom|center"
+            app:toggle_textPaddingBottom="20dp" />
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/btnScribble"
+            android:layout_width="0dp"
+            android:layout_height="145dp"
+            app:layout_flexGrow="1"
+            app:toggle_btnCornerRadius="10dp"
+            app:toggle_icon="@drawable/ic_scribble_outline"
+            app:toggle_iconGravity="top|center"
+            app:toggle_iconPaddingHorizontal="15dp"
+            app:toggle_iconPaddingTop="15dp"
+            app:toggle_selectedBackgroundColor="@color/light_blue"
+            app:toggle_selectedTextColor="@android:color/white"
+            app:toggle_text="Scribble Mode"
+            app:toggle_textGravity="bottom|center"
+            app:toggle_textPaddingBottom="20dp" />
+
+    </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:text="@string/choose_calendar_theme"
+        android:textColor="@color/light_blue"
+        android:textSize="20sp"
+        android:gravity="center_horizontal" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleButtonChooseMode"
+        android:layout_width="886dp"
+        app:singleSelection="true"
+        android:layout_marginTop="50dp"
+        android:layout_height="395dp">
+
+        <Button
+            android:id="@+id/btnWidget"
+            android:layout_width="436dp"
+            android:layout_height="match_parent"
+            app:iconSize = "80dp"
+            android:text="@string/widget_mode"
+            app:iconGravity = "top"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:textSize="24sp"
+            app:icon="@drawable/ic_widget_outline" />
+
+        <Button
+            android:id="@+id/btnScribble"
+            android:layout_width="451dp"
+            app:iconGravity = "top"
+            app:iconSize = "80dp"
+            android:layout_height="395dp"
+            android:text="@string/scribble_mode"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:textSize="24sp"
+            app:icon="@drawable/ic_scribble_outline" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <Button
+        android:id="@+id/nextOutlineButton"
+
+        android:layout_width="204dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/next" />
+
+</LinearLayout>
+
